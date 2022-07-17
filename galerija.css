@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgba(21, 1, 1, 0); 
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    -moz-box-align: center;
+}
+.footer { /*definisanje footera nakon kreiranja u htmlu*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  height: 60px;
+  text-align: center;
+}
+p{
+    font-size: 14px;
+    margin-top: 22;
+}
+.header {
+    padding: 20px;
+    text-align: center;
+    background:#DEB887;    ;
+    color: white;
+    font-size: 30px;
+    height: 10px;
+    margin: -760 0px;
+  }
+.logo{
+    flex-basis: 16%;
+}
+.logo img{
+    width: 80%;
+    margin: 30 -320px;
+}
+.nav-links{   /* tekst skroluje ka desno */
+    flex: 1;
+    text-align: right;
+    margin: -5px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: -40 16px;
+}
+.nav-links ul li a{ /*tekst za meni*/
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links ul li:hover{ /*podvuce tekst kad predje misem*/
+    text-decoration: underline;
+}
+html, body{ /*sakrila skroz bar i onemogucila skrol*/
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-color: beige;
+}
+.img-slike{
+    width: 98%;
+    margin: 828px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+.img-slike img{
+    width: 95%;
+    padding: 6px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+.img-slike img:hover{
+    filter: grayscale(0);
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+    transform: scale(1.1);
+}
+@media only screen and (max-width:700px){
+    .header{
+        width: 100%;
+        padding: 50px;
+    }
+    .footer{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .footer p{
+        font-size: 9px;
+    }
+    .nav-links{
+        font-size: 10px;
+        flex: 1;
+        margin: -14px;
+    }
+    .nav-links ul li{
+        display: inline-block;
+        margin: -20 6px;
+    }
+    .nav-links ul li a{ /*tekst za meni*/
+        color: white;
+        font-size: 12px;
+        font-style: italic;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .img-slike{
+        width: 5%;
+        margin: 300px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+    .img-slike img{
+        width: 36%;
+        padding: 2px;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: 0.4s;
+    }
+}

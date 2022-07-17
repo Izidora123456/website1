@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgba(21, 1, 1, 0); 
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    -moz-box-align: center;
+}
+.footer { /*definisanje footera nakon kreiranja u htmlu*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  height: 60px;
+  text-align: center;
+}
+/*h1{ velicina za tekst
+    font-weight: lighter;
+    color: white;
+    font-size: 16px;
+}*/
+.header {
+    padding: 20px;
+    text-align: center;
+    background:#DEB887;    
+    color: white;
+    font-size: 30px;
+    height: 10px;
+    margin: -760 0px;
+  }
+.logo{
+    flex-basis: 16%;
+}
+.logo img{
+    width: 80%;
+    margin: 30 -320px;
+}
+.nav-links{   /* tekst skroluje ka desno */
+    flex: 1;
+    text-align: right;
+    margin: -5px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: -40 16px;
+}
+.nav-links ul li a{ /*tekst za meni*/
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links ul li:hover{ /*podvuce tekst kad predje misem*/
+    text-decoration: underline;
+}
+.contact-map iframe{
+    width: 40%;
+    height: 40%;
+    margin: 920 50px;
+}
+html, body{ /*sakrila skroz bar i onemogucila skrol*/
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.kontakt{ /*tekst na pocetnoj*/
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    color: black;
+    margin: 40 760px;
+   font-size: 9px;
+   font-style: italic;
+}
+.radnovreme{
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    /*transform: translateY(-50%);*/
+    color: black;
+    margin: 12 1150px;
+   font-size: 12px;
+   white-space: pre; /*da mi uracuna svaki space iz htmla*/
+}
+h1{
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+h2{
+    font-size: 16px;
+    margin: 10 0px;
+}
+h3{
+    font-size: 13px;
+}
+p{ 
+    font-size: 14px;
+    margin-top: 22;
+}
+p1{
+    font-size: 16px;
+    margin: -16 -15px;
+}
+body{
+    background-color: beige;
+}
+.social-links img{
+    height: 30px;
+    margin: 520px auto 700px; /*auto mi ih spoji*/
+    cursor: pointer;
+}
+.social-links{
+    text-align: center;
+}
+@media only screen and (max-width:700px){
+    .radnovreme{
+      margin: -100px 120px;
+      line-height: 14px;/*smanjila udaljenost izm redova*/
+    }
+    .radnovreme h1{
+        font-size: 13px;
+    }
+    .radnovreme p1{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .header{
+        width: 100%;
+        padding: 50px;
+    }
+    .footer{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .footer p{
+        text-align: center;
+    }
+    .nav-links{
+        font-size: 10px;
+        flex: 1;
+        margin: -14px;
+    }
+    .nav-links ul li{
+        display: inline-block;
+        margin: -20 6px;
+    }
+    .nav-links ul li a{ /*tekst za meni*/
+        color: white;
+        font-size: 12px;
+        font-style: italic;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .contact-map{
+        margin: 150px 40px;
+        width: 450px;
+        height: 450px;
+    }
+    .kontakt{
+        margin: 90px 100px;
+    }
+    .kontakt h1{
+        font-size: 13px;
+    }
+    .kontakt h2{
+        font-size: 12px;
+    }
+    .kontakt h3{
+        font-size: 11px;
+    }
+    .social-links{
+        margin-top: -70px;
+    }
+}   
+

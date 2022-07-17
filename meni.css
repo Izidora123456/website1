@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgba(21, 1, 1, 0); 
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    -moz-box-align: center;
+}
+.footer { /*definisanje footera nakon kreiranja u htmlu*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  height: 60px;
+  text-align: center;
+}
+p{
+    font-size: 14px;
+    margin-top: 22;
+}
+.header {
+    padding: 20px;
+    text-align: center;
+    background:#DEB887;    ;
+    color: white;
+    font-size: 30px;
+    height: 10px;
+    margin: -760 0px;
+  }
+.logo{
+    flex-basis: 16%;
+}
+.logo img{
+    width: 80%;
+    margin: 30 -320px;
+}
+.nav-links{   /* tekst skroluje ka desno */
+    flex: 1;
+    text-align: right;
+    margin: -5px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: -40 16px;
+}
+.nav-links ul li a{ /*tekst za meni*/
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links ul li:hover{ /*podvuce tekst kad predje misem*/
+    text-decoration: underline;
+}
+html, body{ /*sakrila skroz bar i onemogucila skrol*/
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-color: beige;
+}
+.menu{
+    background: light-bg;
+ }
+ 
+ .menu .slide .title{
+    padding:1rem;
+    font-size: 24px;
+    color:white;
+    background: peru;
+    margin-bottom: 18px;
+    text-align: center;
+ }
+ 
+ .menu .slide .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-bottom: 4rem;
+ }
+ 
+ .menu .slide .box-container .box{
+    flex:1 1 41rem;
+    background: white;
+    padding:2rem;
+    box-shadow: box-shadow;
+    border:border;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: space-between;
+ }
+ 
+ .menu .slide .box-container .box h3{
+    font-size: 25px;
+    color:black;
+    padding-bottom: .5rem;
+ }
+ 
+ .menu .slide .box-container .box p{
+    font-size: 14px;
+    color:light-black;
+    line-height: 0;
+ }
+ 
+ .menu .slide .box-container .box .price{
+    font-size: 24px;
+    color:peru;
+ }
+ 
+ .menu .slide .box-container .box:hover{
+    transform: scale(.9);
+    cursor: pointer;
+ }
+ .heading{
+     text-align: center;
+ }
+ @media only screen and (max-width:700px){
+    .header{
+        width: 100%;
+        padding: 50px;
+    }
+    .footer{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .footer p{
+        font-size: 9px;
+    }
+    .nav-links{
+        font-size: 10px;
+        flex: 1;
+        margin: -14px;
+    }
+    .nav-links ul li{
+        display: inline-block;
+        margin: -20 6px;
+    }
+    .nav-links ul li a{ /*tekst za meni*/
+        color: white;
+        font-size: 12px;
+        font-style: italic;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .menu .slide .title{
+        font-size: 15px;
+    }
+    .menu .slide .box-container .box{
+        flex:1 1 2px;
+        padding: 1px;
+        gap: -15px;
+    }
+    .menu .slide .box-container .box .info h3{
+        font-size: 16px;
+    }
+    .menu .slide .box-container .box .price{
+        font-size: 14px;
+    }
+    .menu .slide .box-container .box .info p{
+        font-size: 10px;
+    }
+}
